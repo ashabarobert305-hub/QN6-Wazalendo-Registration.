@@ -35,3 +35,47 @@ CREATE TABLE Members (
     PhoneNumber VARCHAR(10) NOT NULL,
     InitialDeposit DOUBLE NOT NULL
 );
+
+
+🛠️ Setup and Installation
+Prerequisites
+Java Development Kit (JDK): Version 8 or higher.
+
+Microsoft Access Database: A .accdb file containing the Members table.
+
+UCanAccess Drivers: You need the UCanAccess driver suite jar files (ucanaccess-x.x.x.jar, jackcess-x.x.x.jar, commons-lang3-x.x.jar, commons-logging-x.x.jar, hsqldb-x.x.jar) added to your project classpath.
+
+Configuration Steps
+1.   Clone the Repository:
+
+Bash
+git clone [https://github.com/YOUR_USERNAME/QN6-Wazalendo-Registration.git](https://github.com/YOUR_USERNAME/QN6-Wazalendo-Registration.git)
+cd QN6-Wazalendo-Registration
+
+2.   Database Connection String:
+Open WazalendoRegistration.java and modify the static database file path string to match your computer's local system pathway layout:
+
+Java
+private static final String DB_URL = "jdbc:ucanaccess://C:/YourFolder/WazalendoDB.accdb";
+
+3.    Compile and Run:
+Using your preferred IDE (IntelliJ IDEA, Eclipse, NetBeans) or command line:
+
+Bash
+javac WazalendoRegistration.java
+java WazalendoRegistration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
